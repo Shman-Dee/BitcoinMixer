@@ -1,0 +1,6 @@
+@BitcoinMixer_HostAddress = http://localhost:5114
+
+GET {{BitcoinMixer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
