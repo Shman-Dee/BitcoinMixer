@@ -18,6 +18,6 @@ namespace BitcoinMixer.Models
         [Required]
         public string Status { get; set; } = "pending"; // pending, confirmed, mixed
 
-        public List<MixTransaction> MixTransactions { get; set; } = new();
+        public List<MixTransaction> MixTransactions { get; set; } = [];
     }
 }

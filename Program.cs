@@ -1,9 +1,12 @@
 using BitcoinMixer.Data;
 using Microsoft.EntityFrameworkCore;
+using BitcoinMixer.Repositories;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IDepositRepository, DepositRepository>();
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<MixerDbContext>(options =>
